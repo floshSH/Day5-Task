@@ -1,0 +1,45 @@
+let resume= {
+  Name : "Subash" ,
+  Age : "22" ,
+  Father : "Veerasamy" ,
+  Mother : "Amsavalli" ,
+  Education : "B.tech - Chemical Engineer" ,
+  Occupation : "Process and operation Engineer" ,
+  Native : "Karur" ,
+  Hobbies : "Watching CWC" ,
+  MaritalStatus : "Single" 
+  
+}
+
+//for loop iterate 
+let arr= [1, 2, 3, 4]
+ let keys= Object.keys(resume);
+
+ for(let i=0; i<keys.length; i++){
+  console.log(`${keys[i]} : ${resume[keys[i]]}`);
+ }
+
+
+ //for in loop iterate 
+for(let values in resume){
+  console.log(`${values} : ${resume[values]}`);
+}
+
+ 
+let resume1=[ "Name : Subash" ,
+"Age : 22" ,
+"Father's Name : Veerasamy" ,
+"Mother's Name : Amsavalli" ,
+"Education : B.tech - Chemical Engineer" ,
+"Occupation : Process and operation Engineer" ,
+"Native : Karur" ,
+"Hobbies : Watching CWC" ,
+"Marital Status : Single" ]
+
+//forEach loop iterate 
+resume1.forEach((value) => console.log(value));
+
+//forOf loop iterate 
+for(let data of resume1){
+  console.log(data);
+}
